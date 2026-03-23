@@ -88,10 +88,18 @@
         .branding-card {
             display: grid; grid-template-columns: 45% 55%; background: white;
             box-shadow: 15px 15px 0px rgba(101, 92, 91, 0.1); overflow: hidden; transition: transform 0.3s ease;
+            align-items: center; /* Centers text vertically next to square image */
         }
         .branding-card:hover { transform: translateY(-5px); }
 
-        .project-preview { position: relative; background-color: #000; height: 400px; }
+        /* FIXED RATIO 1:1 (Square) */
+        .project-preview { 
+            position: relative; 
+            background-color: #000; 
+            width: 100%;
+            aspect-ratio: 1 / 1; 
+            overflow: hidden;
+        }
         .project-preview img { width: 100%; height: 100%; object-fit: cover; opacity: 0.85; }
 
         .project-info { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
@@ -130,7 +138,7 @@
                         <ul class="dropdown-content">
                             <li><a href="https://cornelia-manda.github.io/videography/">Videography</a></li>
                             <li><a href="https://cornelia-manda.github.io/branding/">Branding</a></li>
-                            <li><a href="#">Web and App</a></li>
+                            <li><a href="https://cornelia-manda.github.io/web-app/">Web and App</a></li>
                             <li><a href="#">Graphic Design</a></li>
                         </ul>
                     </li>
@@ -150,7 +158,7 @@
                     <img src="Heveblue-cover.png" alt="HEVEBLUE rebrand cover">
                 </div>
                 <div class="project-info">
-                    <span class="project-tag">Branding | 2026</span>
+                    <span class="project-tag">Branding | 2025</span>
                     <h2>HEVEBLUE Rebrand</h2>
                     <p class="project-meta">Role: Lead & Sole Designer, Brand Strategist, Creative Director</p>
                     <p class="project-desc">A strategic redesign of the K-Beauty brand HEVEBLUE, repositioning clinical products into an aspirational "Blinding Glow" superpower using a GenAI-first methodology.</p>
